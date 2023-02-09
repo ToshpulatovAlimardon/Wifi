@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0px;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #2B2B36;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+}
+.container{
+    width: 50px;
+    height: 50px;
+    background-color: #d5d5d5;
+    border-radius:100%;
+    position: relative;
+    animation: glow 5s forwards infinite;
+    transform: translateY(100px);
+}
+
+@keyframes glow {
+    0%{
+        background-color: #d5d5d5;
+    }
+    10%{
+        background-color: #43414A;
+    }
+    100%{
+        background-color: #43414A;
+    }
+}
+
+.wifi{
+    width: 150px;
+    height: 150px;
+    border: 50px solid transparent;
+    border-top-color: #d5d5d5;
+    border-radius: 100%;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    animation: glow1 5s forwards infinite;
+}
+@keyframes glow1 {
+    30%{
+        border-top-color: #d5d5d5;
+    }
+    40%{
+        border-top-color: #43414A;
+    } 100%{
+        border-top-color: #43414A;
+    }
+}
+.wifi:before{
+    content: "";
+    width: 330px;
+    height: 330px;
+    border: 50px solid transparent;
+    border-top-color: #d5d5d5;
+    border-radius: 100%;
+    position: absolute;
+    top: -150px;
+    left: -140px;
+    animation: glow2 5s forwards infinite;
+}
+@keyframes glow2 {
+    50%{
+        border-top-color: #d5d5d5;
+    }
+    60%{
+        border-top-color: #43414A;
+    } 100%{
+        border-top-color: #43414A;
+    }
+}
+.wifi:after{
+    content: "";
+    width: 520px;
+    height: 520px;
+    border: 50px solid transparent;
+    border-top-color: #d5d5d5;
+    border-radius: 100%;
+    position: absolute;
+    top: -250px;
+    left: -235px;
+    animation: glow3 5s forwards infinite;
+}
+@keyframes glow3 {
+    70%{
+        border-top-color: #d5d5d5;
+    }
+    80%{
+        border-top-color: #43414A;
+    } 100%{
+        border-top-color: #43414A;
+    }
+}
